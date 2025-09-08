@@ -63,7 +63,7 @@ const modalDetails =(id)=>{
           modalContainer.innerHTML=`
   
     <h3 class="text-2xl font-bold mt-2">${plantData.name}</h3>
-    <img class="mx-auto rounded-lg h-[150px] md:h-[300px] w-full object-cover" src="${plantData.image}" alt="">
+    <img class="mx-auto rounded-lg h-[200px] md:h-[300px] w-full object-cover" src="${plantData.image}" alt="">
     <p class="pt-2"> <span class="font-bold">Category:</span>${plantData.category}</p>
     <p class=""> <span class="font-bold">Price:</span>৳${plantData.price}</p>
     <p class=""> <span class="font-bold">Description:</span>${plantData.description}</p>
