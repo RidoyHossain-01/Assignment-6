@@ -27,7 +27,7 @@
      
         <header>
           <!-- navbar section starts here -->
-          <nav>
+          <nav class="sticky top-0 z-20">
                <div class="navbar bg-[#15803D] shadow-sm lg:px-32 ">
      <div class="navbar-start">
      <div class="dropdown">
@@ -61,7 +61,7 @@
           <!-- hero section starts here -->
            <section class="hero md:flex gap-24 pt-12 bg-[#cff0dc]">
                <div class="div1">
-                <img class="opacity-80 md:opacity-100" src="./assets/hero-leaf1.png" alt="">
+                <img class="opacity-80 md:opacity-100 " src="./assets/hero-leaf1.png" alt="">
                </div>
                <div class="div2 text-center md:text-left lg:text-center space-y-5 z-10">
                     <h1 class="text-5xl font-bold text-green-900">Plant a Tree, Grow a Future</h1>
@@ -77,9 +77,53 @@
            
           <!-- hero section ends here -->
      </header>  
+     <!-- tree choosing section starts here -->
+      <section class="w-11/12 mx-auto py-5 mt-14 bg-[#F0FDF4]">
+        <h2 class="text-center text-2xl font-semibold pb-10">Choose Your Trees</h2>
+        <div class="md:grid grid-cols-5 gap-1">
+          <div class="flex md:block gap-5 items-center flex-wrap justify-center mb-5 md:mb-0" id="categories" >
+           
+          </div>
+          <div id="loading" class="col-span-3 mx-auto my-auto hidden">
+            <span class="loading loading-dots loading-xl text-[#15803D]"></span>
+          </div>
+          <div id="tree-cards" class="col-span-3 grid  grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-3">
+            
+           
+
+          </div>
+          <div id="cart" class="lg:ml-4 md:ml-2 lg:px-4">
+            <h1 class="text-2xl font-bold mb-5">Your Cart</h1>
+            <div class="mb-5 md:mb-0" id="cart-container">
+              
+            </div>
+
+
+            <div class="flex items-center justify-between">
+              <h5 class="text-lg font-semibold">Total:</h5>
+              <p class="text-lg font-semibold">৳ <span id="cart-total">0</span></p>
+            </div>
+            
+     
+     
+     
+     
+     
+            <!-- Open the modal using ID.showModal() method -->
+       <dialog id="plant_details_modal" class="modal modal-bottom sm:modal-middle">
+  <div id="modal-info" class="modal-box p-4">
+    
+    
+  </div>
+  
+      </dialog>
+          </div>
+        </div>
+      </section>
+
      
      <!-- campaign section starts here -->
-      <section class=" mt-24 py-24 bg-[#F0FDF4]">
+      <!-- <section class=" mt-24 py-24 bg-[#F0FDF4]">
         <h2 class="text-center text-2xl font-semibold pb-10">About the Campaign</h2>
          <div class="lg:w-3/4 mx-auto md:flex justify-between items-center gap-5 p-4">
         <div class="flex-1">
@@ -96,11 +140,11 @@
           </ul>
         </div>
       </div>
-      </section>
+      </section> -->
      <!-- campaign section ends here -->
 
      <!-- impact section starts here -->
-      <section class="bg-[#CFF0DC] py-24 ">
+      <!-- <section class="bg-[#CFF0DC] py-24 ">
         <h2 class="text-center text-2xl font-semibold pb-10 ">Our Impact</h2>
         <div class="md:flex justify-between  mx-auto gap-10 px-24">
         <div class="bg-white text-center p-10 flex-1 rounded-lg space-y-1 mb-4">
@@ -117,12 +161,12 @@
         </div>
         
       </div>
-      </section>
+      </section> -->
      <!-- impact section ends here -->
 
 
       <!-- footer section starts here -->
-      <section class="bg-[#166534] py-24 ">
+      <!-- <section class="bg-[#166534] py-24 ">
         <h2 class="text-center text-2xl font-semibold pb-10 text-white">Plant a Tree Today</h2>
         <div class="p-10 flex flex-col mx-auto items-center gap-3 bg-[#15803D] rounded-xl md:w-[650px]">
           <input type="text" placeholder="Your Name" class="input input-ghost w-full bg-white" />
@@ -137,14 +181,16 @@
            
         </div> 
         <a class="btn w-full bg-yellow-400 text-green-700 rounded-full hover:bg-yellow-300 hover:shadow-lg">Plant a Tree</a>
-      </section>
-      <footer>
+      </section> -->
+      <!-- <footer>
         <footer class="footer sm:footer-horizontal footer-center bg-[#14532D] text-base-content p-4">
   <aside>
     <p class="text-white text-xm font-extralight">© 2025 Green Earth. All Rights Reserved.</p>
   </aside>
 </footer>
-      </footer>
+      </footer> -->
       <!-- footer section ends here -->
+
+      <script src="./js/script.js"></script>
 </body>
 </html>
